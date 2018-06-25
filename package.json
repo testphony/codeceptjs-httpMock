@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-httpmock",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "CodeceptJS helper for HTTP Mock with Mochawesome logging",
   "dependencies": {
     "@kronoslive/codeceptjs-utils": "^0.0.1",
@@ -20,6 +20,12 @@
     "type": "git",
     "url": "git@github.com:APshenkin/codeceptjs-httpMock.git"
   },
+  "keywords": [
+    "codeceptJS",
+    "codeceptjs",
+    "mockttp",
+    "mock"
+  ],
   "author": "Andrey Pshenkin <andrey.pshenkin@gmail.com>",
   "license": "MIT"
 }

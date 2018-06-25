@@ -12,7 +12,7 @@ let mochawesome;
 let utils;
 
 /**
- * Хэлпер для работы с http моком.
+ * Helper to manage mockttp
  */
 class HTTPMock extends Helper {
   /**
@@ -81,7 +81,7 @@ class HTTPMock extends Helper {
   }
 
   /**
-   * Настраивает мок для заданного метода и urlPath. Отвечать будет тем, что будет задано в callback.
+   * Set up mock for method и urlPath. Response calculates in callback function.
    * @param {string} method
    * @param {string} urlPath
    * @param {function} callback
@@ -153,8 +153,7 @@ class HTTPMock extends Helper {
   }
 
   /**
- * Метод проверяет, что для указанного метода и urlpath был совершен запрос, подходящий под предикат за указанный
- * таймаут.
+ * Validates that request comes for method and urlpath that satisfies predicate function
  * @param {string} method
  * @param {string} urlPath
  * @param {function} predicate
@@ -228,8 +227,7 @@ class HTTPMock extends Helper {
   }
 
   /**
- * Метод проверяет, что за указанный таймаут не было ни одного сообщения по методу и urlpath подпадающий под
- * предикат.
+ * Validates that no request comes for method and urlpath that satisfies predicate function
  * @param {string} method
  * @param {string} urlPath
  * @param {function} predicate
@@ -262,7 +260,7 @@ class HTTPMock extends Helper {
   }
 
   /**
- * Получить все запросы по методу и urlPath, которые были отправлены в моксервер.
+ * Get requests that comes to mock server by method and urlPath
  * @param {string} method
  * @param {string} urlPath
  * @returns {Promise<void>}
