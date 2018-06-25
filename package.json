@@ -1,5 +1,5 @@
 {
-  "name": "codeceptjs-httpMock",
+  "name": "codeceptjs-httpmock",
   "version": "0.0.1",
   "description": "CodeceptJS helper for HTTP Mock with Mochawesome logging",
   "dependencies": {
