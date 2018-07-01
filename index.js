@@ -288,6 +288,9 @@ class HTTPMock extends Helper {
       patch: {},
       options: {},
     };
+    if (!this.isRunning) {
+      return true;
+    }
     return this.server.reset();
   }
 
@@ -297,6 +300,9 @@ class HTTPMock extends Helper {
  * @private
  */
   _finishTest() {
+    if (!this.isRunning) {
+      return true;
+    }
     return this.server.stop();
   }
 }
