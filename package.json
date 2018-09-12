@@ -4,7 +4,7 @@
   "description": "CodeceptJS helper for HTTP Mock with Mochawesome logging",
   "dependencies": {
     "@kronoslive/codeceptjs-utils": "^0.0.1",
-    "@kronoslive/mockttp": "^0.5.2",
+    "@kronoslive/mockttp": "^0.7.5",
     "requireg": "^0.1.8"
   },
   "devDependencies": {
