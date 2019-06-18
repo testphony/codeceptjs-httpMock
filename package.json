@@ -1,16 +1,16 @@
 {
   "name": "codeceptjs-httpmock",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "CodeceptJS helper for HTTP Mock with Mochawesome logging",
   "dependencies": {
-    "@kronoslive/codeceptjs-utils": "^0.0.1",
-    "@kronoslive/mockttp": "^0.7.5",
+    "@kronoslive/codeceptjs-utils": "^0.0.2",
+    "@kronoslive/mockttp": "^0.7.6",
     "requireg": "^0.1.8"
   },
   "devDependencies": {
-    "eslint": "^4.19.1",
-    "eslint-config-airbnb-base": "^12.1.0",
-    "eslint-plugin-import": "^2.12.0"
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3"
   },
   "main": "index.js",
   "scripts": {

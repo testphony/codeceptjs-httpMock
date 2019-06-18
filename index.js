@@ -89,8 +89,7 @@ class HTTPMock extends Helper {
    */
   async respondWith(method, urlPath, callback = () => {}, ctx = {}) {
     method = method.toLowerCase();
-    urlPath =
-    urlPath.charAt(urlPath.length - 1) === '/'
+    urlPath = urlPath.charAt(urlPath.length - 1) === '/'
       ? urlPath.substring(0, urlPath.length - 1)
       : urlPath;
     const callbackWithLog = async (req) => {
@@ -161,8 +160,7 @@ class HTTPMock extends Helper {
  */
   async expectRequestUntil(method, urlPath, predicate = msg => msg, timeout) {
     method = method.toLowerCase();
-    urlPath =
-    urlPath.charAt(urlPath.length - 1) === '/'
+    urlPath = urlPath.charAt(urlPath.length - 1) === '/'
       ? urlPath.substring(0, urlPath.length - 1)
       : urlPath;
     if (this.requests[method][urlPath] === undefined) {
@@ -236,8 +234,7 @@ class HTTPMock extends Helper {
  */
   dontExpectRequestUntil(method, urlPath, predicate, timeout) {
     method = method.toLowerCase();
-    urlPath =
-    urlPath.charAt(urlPath.length - 1) === '/'
+    urlPath = urlPath.charAt(urlPath.length - 1) === '/'
       ? urlPath.substring(0, urlPath.length - 1)
       : urlPath;
     if (this.requests[method][urlPath] === undefined) {
@@ -267,8 +264,7 @@ class HTTPMock extends Helper {
  */
   grabServerRequests(method, urlPath) {
     method = method.toLowerCase();
-    urlPath =
-    urlPath.charAt(urlPath.length - 1) === '/'
+    urlPath = urlPath.charAt(urlPath.length - 1) === '/'
       ? urlPath.substring(0, urlPath.length - 1)
       : urlPath;
     return this.requests[method][urlPath].getSeenRequests();
