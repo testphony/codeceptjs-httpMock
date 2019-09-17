@@ -1,6 +1,6 @@
 {
   "name": "codeceptjs-httpmock",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "CodeceptJS helper for HTTP Mock with Mochawesome logging",
   "dependencies": {
     "@kronoslive/codeceptjs-utils": "^0.0.2",
